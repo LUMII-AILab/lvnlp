@@ -1,0 +1,30 @@
+[build-system]
+requires = ['setuptools>=68', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'lvnlp'
+version = '0.1.0'
+description = 'Latvian NLP tools'
+readme = 'README.md'
+requires-python = '>=3.10'
+dependencies = [
+    'torch==2.9.0',
+    'smart-open==7.5.0',
+    'tqdm==4.67.1',
+    'transformers==4.57.1',
+    'huggingface-hub==0.36.2',
+    'ufal.chu-liu-edmonds==1.0.3',
+    'conllu==6.0.0',
+    'wandb==0.23.0',
+    'sentencepiece==0.2.1',
+    'tiktoken==0.12.0',
+    'safetensors==0.7.0',
+]
+
+[project.urls]
+Homepage = "https://github.com/LUMII-AILab/lvnlp"
+Repository = "https://github.com/LUMII-AILab/lvnlp"
+
+[tool.setuptools.packages.find]
+include = ['lvnlp*']
